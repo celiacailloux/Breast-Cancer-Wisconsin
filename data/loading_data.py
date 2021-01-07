@@ -8,11 +8,10 @@ Created on Tue Feb  6 17:13:24 2018
 import xlrd
 import numpy as np
 
-
-#Load xls sheet with data 'Users/osezeiyore/Dropbox/02450\ Machine \ Learning/EgneScripts/AttributeNames.xlsx'
-#docNames = xlrd.open_workbook('/celiacailloux/Dropbox/02450 Machine Learning/EgneScripts/AttributeNames.xlsx').sheet_by_index(0)
-docNames = xlrd.open_workbook('/Users/celiacailloux/Dropbox/02450 Machine Learning/EgneScripts_celia/AttributeNames.xlsx').sheet_by_index(0)
-doc = xlrd.open_workbook('/Users/celiacailloux/Dropbox/02450 Machine Learning/EgneScripts_celia/WDBC.xls').sheet_by_index(0)
+# load data from xslx file 
+# insert path to data
+docNames    = xlrd.open_workbook('/Users/celiacailloux/Google Drev/Programmering/Python/Projects/02450 Machine Learning and Data Mining/data/AttributeNames.xlsx').sheet_by_index(0)
+doc         = xlrd.open_workbook('/Users/celiacailloux/Google Drev/Programmering/Python/Projects/02450 Machine Learning and Data Mining/data/WDBC.xls').sheet_by_index(0)
 
 # 1st column is ID
 # 2nd column is classLabels

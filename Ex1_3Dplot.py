@@ -1,16 +1,21 @@
 # Exercise 4.1.6
+'''
+This script renders a non-interactive 3D plot of three attributes
+'''
 
-from matplotlib.pyplot import (figure, show, hold)
+from matplotlib.pyplot import (figure, show)#, hold)
 from mpl_toolkits.mplot3d import Axes3D
 
+# self-made modules
 # requires data from exercise 4.1.1
-from LoadingData import *
+# from LoadingData import *
+from data.loading_data import *
 
 X = np.asarray(X)
 y = yBoxPlot
 
 # Indices of the variables to plot
-ind = [4, 5, 6]
+ind = [10, 5, 6]
 colors = ['blue', 'green', 'red']
 
 f = figure()
